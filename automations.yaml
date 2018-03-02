@@ -1,0 +1,8 @@
+- alias: 'Port 21 Button test'
+  trigger:
+    entity_id: binary_sensor.port_21
+    platform: state
+    to: 'on'
+  action:
+    - service: switch.toggle
+      entity_id: switch.led_1

@@ -1,0 +1,25 @@
+default_view:
+  view: yes
+  icon: mdi:home-assistant
+  entities:
+#    - group.all_devices
+#    - binary_sensor.Port_2
+#    - switch.GPIO21
+    - group.foo
+#default_view:
+#  view: yes
+#  icon: mdi:home-assistant
+#  entities:
+#    - group.foo
+#
+#foo:
+#  name: foo
+#  entities:
+#    - binary_sensor.port_21
+
+foo:
+  name: foo
+  view: yes
+  entities:
+    - binary_sensor.port_21
+    - switch.led_1
